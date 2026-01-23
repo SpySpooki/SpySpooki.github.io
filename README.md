@@ -8,7 +8,7 @@ Support for all DamianGh apps and games.
 - Other future DamianGh games
 
 ## Contact
-Email: hamsterboy003@gmail.com
+Email: damianghdev@gmail.com
 
 ## What to include in your message
 Please include:
