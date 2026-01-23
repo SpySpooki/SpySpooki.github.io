@@ -1,11 +1,21 @@
+# DamianGh — Support
 
-<html>
-  <head>
-    Frutties & Veggies - Support
-  </head>
-  <body>
-    <h1>Frutties & Veggies</h1>
-    <p>A fun match-3 puzzle game for kids featuring fruits and vegetables.</p>
-    <p>Need help or have questions? Contact us at: <strong>hamsterboy003@gmail.com</strong></p>
-  </body>
-</html>
+Support for all DamianGh apps and games.
+
+## Supported Apps
+- PopBirdy
+- Frutties & Veggies
+- Other future DamianGh games
+
+## Contact
+Email: hamsterboy003@gmail.com
+
+## What to include in your message
+Please include:
+- App name
+- Device model (iPhone / iPad)
+- iOS version
+- Description of the issue
+- Screenshot (optional)
+
+We usually respond within a few business days.
