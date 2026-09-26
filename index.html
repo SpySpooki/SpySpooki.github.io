@@ -4,69 +4,77 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#080b12">
-  <meta name="description" content="DamianGh — indie mobile games for iOS and Android. Creator of PopBirdy and Frutties & Veggies.">
-  <title>DamianGh — Indie Games</title>
+  <meta name="description" content="Damian Gheorghisenco — Unity game developer building and shipping mobile games for Android and iOS.">
+  <title>Damian Gheorghisenco — Unity Game Developer</title>
   <style>
-    :root{--bg:#080b12;--panel:#111725;--panel2:#151c2c;--text:#f6f8ff;--muted:#aab3ca;--line:#273047;--blue:#37b7ff;--violet:#8b5cff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at 15% 5%,rgba(55,183,255,.17),transparent 28rem),radial-gradient(circle at 88% 18%,rgba(139,92,255,.15),transparent 26rem),var(--bg);min-height:100vh}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}
-    nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0}.brand{display:flex;align-items:center;gap:11px;font-weight:850;font-size:1.2rem}.brand img{width:42px;height:42px;border-radius:14px;display:block;box-shadow:0 0 24px rgba(79,103,255,.25)}.navlinks{display:flex;gap:20px;color:var(--muted);font-size:.95rem}
-    .hero{padding:72px 0 62px;text-align:center}.hero-logo{width:104px;height:104px;border-radius:28px;display:block;margin:0 auto 18px;box-shadow:0 12px 40px rgba(53,121,255,.24)}.badge{display:inline-block;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.035);color:#c8d1e7;font-size:.85rem}
-    h1{font-size:clamp(3rem,8vw,6.3rem);line-height:.94;margin:22px 0 20px;letter-spacing:-.06em}.grad{background:linear-gradient(90deg,#49c5ff,#8d72ff,#d35fff);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{max-width:700px;margin:0 auto;color:var(--muted);font-size:clamp(1rem,2.1vw,1.25rem);line-height:1.65}
-    .games{padding:38px 0 86px}.section-title{font-size:1.9rem;margin:0 0 22px;letter-spacing:-.03em}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-    .card{position:relative;overflow:hidden;padding:30px;border-radius:26px;border:1px solid var(--line);background:linear-gradient(145deg,var(--panel2),var(--panel));min-height:375px;display:flex;flex-direction:column}.card:before{content:"";position:absolute;width:235px;height:235px;border-radius:50%;filter:blur(58px);opacity:.22;right:-90px;top:-85px;background:var(--glow)}.art{width:100%;aspect-ratio:1/1;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);margin-bottom:22px}.art img{width:100%;height:100%;display:block;object-fit:cover}.kicker{color:#8fc7ff;font-weight:750;font-size:.82rem;text-transform:uppercase;letter-spacing:.12em}.card h2{font-size:2rem;margin:8px 0 12px;letter-spacing:-.035em}.card p{color:var(--muted);line-height:1.6;margin:0 0 26px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}.btn{padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:#1a2233;font-weight:750;font-size:.92rem}.btn.primary{background:linear-gradient(90deg,#208fff,#7659ff);border-color:transparent}
-    .about{padding:0 0 92px}.aboutbox{border:1px solid var(--line);background:rgba(17,23,37,.78);border-radius:24px;padding:28px;display:flex;justify-content:space-between;gap:28px;align-items:center}.aboutbox p{margin:6px 0 0;color:var(--muted);line-height:1.6}
-    footer{border-top:1px solid var(--line);padding:28px 0 36px;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footlinks{display:flex;gap:18px;flex-wrap:wrap}
-    @media(max-width:760px){.navlinks{display:none}.hero{padding:58px 0 42px}.grid{grid-template-columns:1fr}.card{min-height:335px}.aboutbox{align-items:flex-start;flex-direction:column}}
+    :root{--bg:#080b12;--panel:#111725;--panel2:#151c2c;--text:#f6f8ff;--muted:#aab3ca;--line:#273047;--blue:#37b7ff;--violet:#8b5cff;--green:#56d8a1}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at 12% 4%,rgba(55,183,255,.15),transparent 30rem),radial-gradient(circle at 92% 15%,rgba(139,92,255,.14),transparent 30rem),var(--bg);min-height:100vh}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.muted{color:var(--muted)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;position:sticky;top:0;z-index:10;background:linear-gradient(180deg,rgba(8,11,18,.94),rgba(8,11,18,.72),transparent);backdrop-filter:blur(10px)}.brand{display:flex;align-items:center;gap:11px;font-weight:850;font-size:1.14rem}.brand img{width:40px;height:40px;border-radius:13px;display:block}.navlinks{display:flex;gap:20px;color:var(--muted);font-size:.92rem;align-items:center}.navlinks a:hover{color:#fff}
+    .hero{padding:88px 0 64px;display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.035);color:#cbd6ea;font-size:.84rem}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 15px rgba(86,216,161,.75)}
+    h1{font-size:clamp(3rem,7vw,5.7rem);line-height:.95;margin:20px 0 22px;letter-spacing:-.06em}.grad{background:linear-gradient(90deg,#49c5ff,#8d72ff,#d35fff);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{max-width:720px;color:var(--muted);font-size:clamp(1rem,1.8vw,1.18rem);line-height:1.7;margin:0}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.btn{padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:#171f30;font-weight:760;font-size:.92rem;display:inline-flex;align-items:center;gap:8px}.btn.primary{background:linear-gradient(90deg,#208fff,#7659ff);border-color:transparent}.btn:hover{transform:translateY(-1px)}
+    .hero-card{border:1px solid var(--line);background:linear-gradient(145deg,var(--panel2),var(--panel));border-radius:28px;padding:28px;position:relative;overflow:hidden}.hero-card:before{content:"";position:absolute;width:230px;height:230px;border-radius:50%;filter:blur(65px);opacity:.23;right:-70px;top:-80px;background:#596bff}.hero-logo{width:96px;height:96px;border-radius:26px;display:block;margin-bottom:22px;box-shadow:0 10px 34px rgba(57,104,255,.18)}.quick{display:grid;gap:14px;position:relative}.quick div{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid rgba(255,255,255,.07);padding-bottom:12px}.quick div:last-child{border-bottom:0;padding-bottom:0}.quick span:first-child{color:var(--muted)}
+    section{padding:38px 0 68px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.section-head h2{font-size:2rem;letter-spacing:-.035em;margin:0}.section-head p{margin:0;color:var(--muted);max-width:560px;line-height:1.55}
+    .projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.project{position:relative;overflow:hidden;padding:26px;border-radius:26px;border:1px solid var(--line);background:linear-gradient(145deg,var(--panel2),var(--panel));display:grid;grid-template-columns:148px 1fr;gap:22px;align-items:center}.project:before{content:"";position:absolute;width:210px;height:210px;border-radius:50%;filter:blur(62px);opacity:.18;right:-80px;top:-80px;background:var(--glow)}.project img{width:148px;height:148px;border-radius:28px;object-fit:cover;position:relative}.kicker{color:#8fc7ff;font-weight:760;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;position:relative}.project h3{font-size:1.65rem;margin:7px 0 8px;letter-spacing:-.03em;position:relative}.project p{color:var(--muted);line-height:1.55;margin:0 0 16px;position:relative}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px;position:relative}.tag{font-size:.76rem;padding:6px 8px;border:1px solid var(--line);border-radius:999px;color:#cad4e9;background:rgba(255,255,255,.025)}.actions{display:flex;gap:8px;flex-wrap:wrap;position:relative}.actions .btn{padding:9px 12px;font-size:.82rem}
+    .experience{display:grid;grid-template-columns:1fr 1fr;gap:20px}.timeline,.skills{border:1px solid var(--line);border-radius:24px;background:rgba(17,23,37,.76);padding:26px}.job{padding:0 0 22px;margin-bottom:22px;border-bottom:1px solid rgba(255,255,255,.08)}.job:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}.job-top{display:flex;justify-content:space-between;gap:16px;align-items:start}.job h3{font-size:1.05rem;margin:0 0 4px}.job .date{color:var(--muted);font-size:.84rem;white-space:nowrap}.job p{color:var(--muted);line-height:1.55;margin:7px 0 0;font-size:.92rem}.skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.skill{padding:16px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.025)}.skill strong{display:block;margin-bottom:6px}.skill span{color:var(--muted);font-size:.9rem;line-height:1.45}
+    .aboutbox{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{border:1px solid var(--line);border-radius:24px;background:rgba(17,23,37,.76);padding:26px}.panel h3{margin:0 0 10px}.panel p{margin:0;color:var(--muted);line-height:1.65}.lang{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}.pill{padding:8px 10px;border-radius:999px;border:1px solid var(--line);color:#d8e0f0;font-size:.84rem}
+    .contact{border:1px solid var(--line);border-radius:28px;background:linear-gradient(120deg,rgba(55,183,255,.11),rgba(139,92,255,.10),rgba(17,23,37,.86));padding:34px;display:flex;justify-content:space-between;gap:24px;align-items:center}.contact h2{margin:0 0 8px;font-size:2rem}.contact p{margin:0;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:28px 0 36px;color:var(--muted);font-size:.88rem}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footlinks{display:flex;gap:17px;flex-wrap:wrap}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-card{max-width:560px}.projects,.experience,.aboutbox{grid-template-columns:1fr}.project{grid-template-columns:120px 1fr}.project img{width:120px;height:120px}.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}}
+    @media(max-width:620px){.hero{padding-top:58px}.project{grid-template-columns:1fr}.project img{width:110px;height:110px}.skill-grid{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}.job-top{flex-direction:column;gap:2px}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <nav>
       <a class="brand" href="/"><img src="assets/damiangh-logo.webp" alt="DamianGh logo"><span>DamianGh</span></a>
-      <div class="navlinks"><a href="#games">Games</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
+      <div class="navlinks"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="cv.html">CV</a><a href="support.html">Support</a></div>
     </nav>
     <main>
       <section class="hero">
-        <img class="hero-logo" src="assets/damiangh-logo.webp" alt="DamianGh logo">
-        <span class="badge">Independent game developer</span>
-        <h1>Games made<br><span class="grad">with personality.</span></h1>
-        <p class="lead">Mobile games for iOS and Android. Discover PopBirdy and Frutties &amp; Veggies below.</p>
+        <div>
+          <span class="eyebrow"><span class="dot"></span> Unity Game Developer</span>
+          <h1>I build mobile games<br><span class="grad">from idea to release.</span></h1>
+          <p class="lead">I'm Damian Gheorghisenco, a Unity developer focused on mobile gameplay, UI, progression systems, monetization and release workflows for Android and iOS.</p>
+          <div class="hero-actions"><a class="btn primary" href="#work">View my work</a><a class="btn" href="cv.html">View CV</a><a class="btn" href="https://github.com/SpySpooki" target="_blank" rel="noopener">GitHub</a></div>
+        </div>
+        <aside class="hero-card">
+          <img class="hero-logo" src="assets/damiangh-logo.webp" alt="DamianGh logo">
+          <div class="quick"><div><span>Location</span><strong>Chișinău, Moldova</strong></div><div><span>Focus</span><strong>Unity • C# • Mobile</strong></div><div><span>Shipped</span><strong>Android &amp; iOS games</strong></div><div><span>Languages</span><strong>RO • RU • EN</strong></div></div>
+        </aside>
       </section>
-      <section class="games" id="games">
-        <h2 class="section-title">My games</h2>
-        <div class="grid">
-          <article class="card" style="--glow:#4a7cff">
-            <div class="art"><img src="assets/popbirdy.webp?v=3" alt="PopBirdy official game icon"></div>
-            <div class="kicker">Arcade</div>
-            <h2>PopBirdy</h2>
-            <p>A fast-paced colorful arcade game built around quick reactions, special birds, power-ups and high-score chasing.</p>
-            <div class="actions">
-              <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.damianghdev.popbirdy" target="_blank" rel="noopener">Google Play</a>
-              <a class="btn" href="https://www.instagram.com/damianghdev/" target="_blank" rel="noopener">Updates</a>
-            </div>
+
+      <section id="work">
+        <div class="section-head"><h2>Featured work</h2><p>Projects that show my current mobile-development workflow: gameplay systems, UI, iteration, monetization and store release.</p></div>
+        <div class="projects">
+          <article class="project" style="--glow:#4a7cff">
+            <img src="assets/popbirdy.webp?v=4" alt="PopBirdy official game icon">
+            <div><div class="kicker">Released mobile game</div><h3>PopBirdy</h3><div class="tags"><span class="tag">Unity 6</span><span class="tag">C#</span><span class="tag">Android / iOS</span><span class="tag">Google Mobile Ads</span></div><p>Fast-paced arcade game with dynamic spawning, difficulty scaling, special birds, persistent progression, unlockable backgrounds, rewarded flows and mobile-focused UI.</p><div class="actions"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.damianghdev.popbirdy" target="_blank" rel="noopener">Google Play</a><a class="btn" href="https://www.instagram.com/damianghdev/" target="_blank" rel="noopener">Updates</a></div></div>
           </article>
-          <article class="card" style="--glow:#e45eb6">
-            <div class="art"><img src="assets/frutties-veggies.webp?v=3" alt="Frutties &amp; Veggies official icon"></div>
-            <div class="kicker">Puzzle</div>
-            <h2>Frutties &amp; Veggies</h2>
-            <p>A cheerful match-3 puzzle game with fruits and vegetables, made to be simple, colorful and family-friendly.</p>
-            <div class="actions">
-              <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.DamianGhDev.FruitsVeggies" target="_blank" rel="noopener">Google Play</a>
-              <a class="btn" href="https://apps.apple.com/app/id6748461965" target="_blank" rel="noopener">App Store</a>
-            </div>
+          <article class="project" style="--glow:#e45eb6">
+            <img src="assets/frutties-veggies.webp?v=4" alt="Frutties &amp; Veggies official game icon">
+            <div><div class="kicker">Published mobile game</div><h3>Frutties &amp; Veggies</h3><div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Match-3</span><span class="tag">Android / iOS</span></div><p>Colorful mobile match-3 game developed and released on both major mobile platforms, covering gameplay, UI, packaging, testing and release preparation.</p><div class="actions"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.DamianGhDev.FruitsVeggies" target="_blank" rel="noopener">Google Play</a><a class="btn" href="https://apps.apple.com/app/id6748461965" target="_blank" rel="noopener">App Store</a><a class="btn" href="https://github.com/SpySpooki/Fruttis-Veggies" target="_blank" rel="noopener">Code</a></div></div>
           </article>
         </div>
       </section>
-      <section class="about">
-        <div class="aboutbox">
-          <div><strong>DamianGh</strong><p>Indie game developer creating mobile games with Unity.</p></div>
-          <a class="btn" href="https://www.instagram.com/damianghdev/" target="_blank" rel="noopener">@damianghdev</a>
+
+      <section id="experience">
+        <div class="section-head"><h2>Experience</h2><p>Game development plus several years of user-facing technical and customer-support work.</p></div>
+        <div class="experience">
+          <div class="timeline">
+            <div class="job"><div class="job-top"><div><h3>Customer Support — Hot Software</h3></div><span class="date">May 2024 — Present</span></div><p>High-volume customer communication, issue resolution, prioritization and independent work in a fast-moving environment.</p></div>
+            <div class="job"><div class="job-top"><div><h3>Unity Developer — Midnight.Works</h3></div><span class="date">Sep 2023 — Dec 2023</span></div><p>Contributed to game-concept development and implemented a playable Unity game using C# and Unity tools.</p></div>
+            <div class="job"><div class="job-top"><div><h3>Customer / IT Support — Stefanini</h3></div><span class="date">Sep 2022 — Sep 2023</span></div><p>Computer maintenance, IT troubleshooting, supplier coordination and day-to-day technical problem resolution.</p></div>
+          </div>
+          <div class="skills" id="skills"><div class="skill-grid"><div class="skill"><strong>Game Development</strong><span>Unity 6, C#, gameplay systems, UI, URP, Input System, LeanTween</span></div><div class="skill"><strong>Mobile &amp; Release</strong><span>Android, iOS, Google Play, App Store workflows, Google Mobile Ads</span></div><div class="skill"><strong>Tools</strong><span>Git, GitHub, Visual Studio, Unity Editor, debugging and troubleshooting</span></div><div class="skill"><strong>Working style</strong><span>Ownership, clear communication, fast learning and structured problem solving</span></div></div></div>
         </div>
       </section>
+
+      <section><div class="aboutbox"><div class="panel"><h3>Education</h3><p><strong>STEP IT Academy — Game Developer</strong><br>2022–2023 • Final result: 9.6/10<br>Diploma project: Shooter Game</p></div><div class="panel"><h3>Languages</h3><p>I work comfortably in multilingual environments and communicate with users and teams in three languages.</p><div class="lang"><span class="pill">Romanian — Native</span><span class="pill">Russian — Fluent</span><span class="pill">English — C1</span></div></div></div></section>
+
+      <section><div class="contact"><div><h2>Let's build something good.</h2><p>Open to Unity, junior game-development and technical roles.</p></div><div class="hero-actions"><a class="btn primary" href="mailto:damianghdev@gmail.com">Email me</a><a class="btn" href="https://github.com/SpySpooki" target="_blank" rel="noopener">GitHub</a></div></div></section>
     </main>
-    <footer><div class="foot"><span>© 2026 DamianGh</span><div class="footlinks"><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="mailto:damianghdev@gmail.com">Contact</a></div></div></footer>
+    <footer><div class="foot"><span>© 2026 DamianGh</span><div class="footlinks"><a href="cv.html">CV</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="mailto:damianghdev@gmail.com">Contact</a></div></div></footer>
   </div>
 </body>
 </html>
