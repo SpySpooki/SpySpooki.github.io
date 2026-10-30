@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#080b12">
   <meta name="description" content="Damian Gheorghisenco — Unity game developer building and shipping mobile games for Android and iOS.">
+  <link rel="canonical" href="https://spyspooki.github.io/">
+  <meta property="og:title" content="Damian Gheorghisenco — Unity Game Developer">
+  <meta property="og:description" content="Published mobile games, Unity and C# projects, and professional game-development experience.">
+  <meta property="og:image" content="https://spyspooki.github.io/assets/damiangh-logo.webp">
+  <meta property="og:url" content="https://spyspooki.github.io/">
+  <meta property="og:type" content="website">
   <title>Damian Gheorghisenco — Unity Game Developer</title>
   <style>
     :root{--bg:#080b12;--panel:#111725;--panel2:#151c2c;--text:#f6f8ff;--muted:#aab3ca;--line:#273047;--blue:#37b7ff;--violet:#8b5cff;--green:#56d8a1}
@@ -22,21 +28,37 @@
     footer{border-top:1px solid var(--line);padding:28px 0 36px;color:var(--muted);font-size:.88rem}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footlinks{display:flex;gap:17px;flex-wrap:wrap}
     @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-card{max-width:560px}.projects,.experience,.aboutbox{grid-template-columns:1fr}.project{grid-template-columns:120px 1fr}.project img{width:120px;height:120px}.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}}
     @media(max-width:620px){.hero{padding-top:58px}.project{grid-template-columns:1fr}.project img{width:110px;height:110px}.skill-grid{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}.job-top{flex-direction:column;gap:2px}}
+  
+    section[id],#skills{scroll-margin-top:100px}
+    a:focus-visible,summary:focus-visible{outline:3px solid #56d8a1;outline-offset:5px}
+    .skip{position:fixed;left:16px;top:-100px;z-index:100;background:#fff;color:#080b12;padding:12px;border-radius:8px}.skip:focus{top:12px}
+    .project{grid-template-columns:1fr;align-content:start}.project img{width:112px;height:112px}
+    .project details{position:relative;margin:18px 0 0;border-top:1px solid var(--line);padding-top:14px}
+    summary{cursor:pointer;font-weight:700;color:#d8e8ff;padding:6px 0}
+    .project ul{padding-left:20px;color:var(--muted);line-height:1.65;font-size:.92rem}.project li+li{margin-top:8px}
+    .project.wip{grid-column:1/-1;grid-template-columns:160px 1fr}
+    .bounce-art{width:148px;height:148px;border-radius:28px;background:radial-gradient(circle at 65% 30%,#4af5e6 0 9px,transparent 11px),linear-gradient(135deg,#121e33,#182b42);position:relative;border:1px solid #345169;overflow:hidden}
+    .bounce-art:before{content:"";position:absolute;width:105px;height:3px;background:#53dfdb;top:85px;left:15px;transform:rotate(-40deg);box-shadow:0 0 18px #53dfdb}
+    .bounce-art:after{content:"";position:absolute;width:70px;height:4px;background:#ae88ff;top:108px;left:75px;transform:rotate(25deg)}
+    .wip-note{font-size:.85rem;color:var(--muted)}
+    @media(max-width:620px){nav{align-items:flex-start;gap:15px}.navlinks{gap:12px;flex-wrap:wrap;justify-content:flex-end;font-size:.85rem}.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.section-head{align-items:flex-start;flex-direction:column}.project.wip{grid-template-columns:1fr}.quick div{flex-wrap:wrap}.hero{gap:24px}h1{font-size:clamp(2.7rem,12vw,4rem)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
   </style>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <div class="wrap">
     <nav>
       <a class="brand" href="/"><img src="assets/damiangh-logo.webp" alt="DamianGh logo"><span>DamianGh</span></a>
-      <div class="navlinks"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="cv.html">CV</a><a href="support.html">Support</a></div>
+      <div class="navlinks"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="cv.html">CV</a><a href="#contact">Contact</a></div>
     </nav>
-    <main>
+    <main id="main">
       <section class="hero">
         <div>
-          <span class="eyebrow"><span class="dot"></span> Unity Game Developer</span>
+          <span class="eyebrow"><span class="dot"></span> Unity Game Developer · Open to opportunities</span>
           <h1>I build mobile games<br><span class="grad">from idea to release.</span></h1>
-          <p class="lead">I'm Damian Gheorghisenco, a Unity developer focused on mobile gameplay, UI, progression systems, monetization and release workflows for Android and iOS.</p>
-          <div class="hero-actions"><a class="btn primary" href="#work">View my work</a><a class="btn" href="cv.html">View CV</a><a class="btn" href="https://github.com/SpySpooki" target="_blank" rel="noopener">GitHub</a></div>
+          <p class="lead">I'm Damian Gheorghisenco, a Unity developer focused on mobile gameplay, UI, progression systems, monetization and release workflows for Android and iOS. I’ve published Frutties &amp; Veggies on both stores and build arcade and physics-puzzle projects.</p>
+          <div class="hero-actions"><a class="btn primary" href="#work">View my work</a><a class="btn" href="cv.html">View CV</a><a class="btn" href="https://github.com/SpySpooki" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/damian-ion-gheorghisenco-8a3a832a2/" target="_blank" rel="noopener">LinkedIn</a></div>
         </div>
         <aside class="hero-card">
           <img class="hero-logo" src="assets/damiangh-logo.webp" alt="DamianGh logo">
@@ -49,11 +71,19 @@
         <div class="projects">
           <article class="project" style="--glow:#4a7cff">
             <img src="assets/popbirdy.webp?v=4" alt="PopBirdy official game icon">
-            <div><div class="kicker">Released mobile game</div><h3>PopBirdy</h3><div class="tags"><span class="tag">Unity 6</span><span class="tag">C#</span><span class="tag">Android / iOS</span><span class="tag">Google Mobile Ads</span></div><p>Fast-paced arcade game with dynamic spawning, difficulty scaling, special birds, persistent progression, unlockable backgrounds, rewarded flows and mobile-focused UI.</p><div class="actions"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.damianghdev.popbirdy" target="_blank" rel="noopener">Google Play</a><a class="btn" href="https://www.instagram.com/damianghdev/" target="_blank" rel="noopener">Updates</a></div></div>
+            <div><div class="kicker">Published on Google Play</div><h3>PopBirdy</h3><div class="tags"><span class="tag">Unity 6</span><span class="tag">C#</span><span class="tag">Android / iOS</span><span class="tag">Google Mobile Ads</span></div><p>Fast-paced arcade game with dynamic spawning, difficulty scaling, special birds, persistent progression, unlockable backgrounds, rewarded flows and mobile-focused UI.</p><details><summary>Development highlights</summary><ul><li>Tap-to-score gameplay with special birds, timed effects, and increasing spawn difficulty.</li><li>Persistent progression, background unlocks, pause/restart flows, and rewarded revives.</li><li>Device testing and iteration on animation, spawning, and UI clarity.</li></ul></details><div class="actions"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.damianghdev.popbirdy" target="_blank" rel="noopener">Google Play</a><a class="btn" href="https://www.instagram.com/damianghdev/" target="_blank" rel="noopener">Updates</a></div></div>
           </article>
           <article class="project" style="--glow:#e45eb6">
             <img src="assets/frutties-veggies.webp?v=4" alt="Frutties &amp; Veggies official game icon">
-            <div><div class="kicker">Published mobile game</div><h3>Frutties &amp; Veggies</h3><div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Match-3</span><span class="tag">Android / iOS</span></div><p>Colorful mobile match-3 game developed and released on both major mobile platforms, covering gameplay, UI, packaging, testing and release preparation.</p><div class="actions"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.DamianGhDev.FruitsVeggies" target="_blank" rel="noopener">Google Play</a><a class="btn" href="https://apps.apple.com/app/id6748461965" target="_blank" rel="noopener">App Store</a><a class="btn" href="https://github.com/SpySpooki/Fruttis-Veggies" target="_blank" rel="noopener">Code</a></div></div>
+            <div><div class="kicker">Published mobile game</div><h3>Frutties &amp; Veggies</h3><div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Match-3</span><span class="tag">Android / iOS</span></div><p>Colorful mobile match-3 game developed and released on both major mobile platforms, covering gameplay, UI, packaging, testing and release preparation.</p><details><summary>Development highlights</summary><ul><li>Match-three gameplay built around three boxes and keeping the final box in play.</li><li>Unity/C# gameplay and UI implementation, mobile packaging, and device testing.</li><li>Published for Android and iOS; store links and source code below.</li></ul></details><div class="actions"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.DamianGhDev.FruitsVeggies" target="_blank" rel="noopener">Google Play</a><a class="btn" href="https://apps.apple.com/app/id6748461965" target="_blank" rel="noopener">App Store</a><a class="btn" href="https://github.com/SpySpooki/Fruttis-Veggies" target="_blank" rel="noopener">Code</a></div></div>
+          </article>
+          <article class="project wip" style="--glow:#53dfdb">
+            <div class="bounce-art" role="img" aria-label="Abstract trajectory illustration for One More Bounce"></div>
+            <div><div class="kicker">In development · Physics puzzle</div><h3>One More Bounce</h3>
+            <div class="tags"><span class="tag">Unity 6</span><span class="tag">C#</span><span class="tag">Touch controls</span><span class="tag">Level iteration</span></div>
+            <p>Drag to aim and release to launch. Route a ball through reflectors, portals, switches, and ordered targets, with alternate paths and mastery challenges.</p>
+            <details><summary>Development highlights</summary><ul><li>Trajectory prediction, swept collision, aim cancellation, and retry flows.</li><li>Progression and medals, hints, tutorials, and haptic feedback.</li><li>Iterating on puzzle difficulty and visual readability through Android playtesting.</li></ul></details>
+            <p class="wip-note">Work in progress. The illustration represents a trajectory; it is not a gameplay screenshot.</p></div>
           </article>
         </div>
       </section>
@@ -62,8 +92,9 @@
         <div class="section-head"><h2>Experience</h2><p>Game development plus several years of user-facing technical and customer-support work.</p></div>
         <div class="experience">
           <div class="timeline">
+            <div class="job"><div class="job-top"><div><h3>Independent Unity Game Developer</h3></div><span class="date">Oct 2023 — Present</span></div><p>Develop mobile game projects using Unity and C#, including Frutties &amp; Veggies, PopBirdy, and One More Bounce. Work across gameplay, UI, progression, testing, and release preparation.</p></div>
             <div class="job"><div class="job-top"><div><h3>Customer Support — Hot Software</h3></div><span class="date">May 2024 — Present</span></div><p>High-volume customer communication, issue resolution, prioritization and independent work in a fast-moving environment.</p></div>
-            <div class="job"><div class="job-top"><div><h3>Unity Developer — Midnight.Works</h3></div><span class="date">Sep 2023 — Dec 2023</span></div><p>Contributed to game-concept development and implemented a playable Unity game using C# and Unity tools.</p></div>
+            <div class="job"><div class="job-top"><div><h3>Unity Developer — Midnight.Works</h3></div><span class="date">Sep 2023 — Dec 2023</span></div><p>Built a restaurant game from scratch using Unity and C#, handling programming and implementation while level design was handled separately. The project targeted a Nintendo release but did not reach that stage during my involvement.</p></div>
             <div class="job"><div class="job-top"><div><h3>Customer / IT Support — Stefanini</h3></div><span class="date">Sep 2022 — Sep 2023</span></div><p>Computer maintenance, IT troubleshooting, supplier coordination and day-to-day technical problem resolution.</p></div>
           </div>
           <div class="skills" id="skills"><div class="skill-grid"><div class="skill"><strong>Game Development</strong><span>Unity 6, C#, gameplay systems, UI, URP, Input System, LeanTween</span></div><div class="skill"><strong>Mobile &amp; Release</strong><span>Android, iOS, Google Play, App Store workflows, Google Mobile Ads</span></div><div class="skill"><strong>Tools</strong><span>Git, GitHub, Visual Studio, Unity Editor, debugging and troubleshooting</span></div><div class="skill"><strong>Working style</strong><span>Ownership, clear communication, fast learning and structured problem solving</span></div></div></div>
@@ -72,7 +103,7 @@
 
       <section><div class="aboutbox"><div class="panel"><h3>Education</h3><p><strong>STEP IT Academy — Game Developer</strong><br>2022–2023 • Final result: 9.6/10<br>Diploma project: Shooter Game</p></div><div class="panel"><h3>Languages</h3><p>I work comfortably in multilingual environments and communicate with users and teams in three languages.</p><div class="lang"><span class="pill">Romanian — Native</span><span class="pill">Russian — Fluent</span><span class="pill">English — C1</span></div></div></div></section>
 
-      <section><div class="contact"><div><h2>Let's build something good.</h2><p>Open to Unity, junior game-development and technical roles.</p></div><div class="hero-actions"><a class="btn primary" href="mailto:damianghdev@gmail.com">Email me</a><a class="btn" href="https://github.com/SpySpooki" target="_blank" rel="noopener">GitHub</a></div></div></section>
+      <section id="contact"><div class="contact"><div><h2>Let's build something good.</h2><p>Looking for a junior Unity/C# role. Based in Chișinău and open to remote opportunities.</p></div><div class="hero-actions"><a class="btn primary" href="mailto:damianghdev@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/damian-ion-gheorghisenco-8a3a832a2/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/SpySpooki" target="_blank" rel="noopener">GitHub</a></div></div></section>
     </main>
     <footer><div class="foot"><span>© 2026 DamianGh</span><div class="footlinks"><a href="cv.html">CV</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="mailto:damianghdev@gmail.com">Contact</a></div></div></footer>
   </div>
